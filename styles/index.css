@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  background-color: #283333;
+}
+
+.controls {
+  height: 100vh;
+  position: absolute;
+  background-color: #3a4b4b;
+}
+
+.controls.left {
+  left: 0;
+  top: 0;
+}
+
+.controls.right {
+  right: 0;
+  top: 0;
+}
+
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+
+.controls .group {
+  border-bottom: 1px solid gray;
+}
+
+.controls .group .item {
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.controls .group .item img {
+  width: 100%;
+  filter: invert();
+}
+
+.controls .group .item:hover,
+.controls .group .item.active {
+  background-color: #4b6161;
+}
+
+#highlighter-size {
+  display: none;
+}
+
+.controls .group .pen .item,
+.controls .group .highlighter .item {
+  position: relative;
+}
+
+.stroke {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.controls .group.colors .item .color {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  box-sizing: border-box;
+}

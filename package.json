@@ -1,0 +1,36 @@
+{
+  "name": "whiteboard",
+  "version": "1.0.0",
+  "description": "Canvas based whiteboard",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adarshlilha/whiteboard.git"
+  },
+  "keywords": [
+    "Canvas",
+    "whiteboard"
+  ],
+  "author": "Adarsh Lilha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adarshlilha/whiteboard/issues"
+  },
+  "homepage": "https://github.com/adarshlilha/whiteboard#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.1.1",
+    "html-webpack-plugin": "^4.4.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

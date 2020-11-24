@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard</title>
+    <link rel="icon" type="image/png" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <div class="controls left">
+        <div class="group tools" id="tool-container">
+            <div class="item active" data-tooltype="PEN" title="Pen">
+                <img src="images/pen.png" />
+            </div>
+            <div class="item" data-tooltype="HIGHLIGHTER" title="Highlighter" data-brushsize="5">
+                <img src="images/brush.png" />
+            </div>
+            <div class="item" data-tooltype="ERASER" title="Eraser">
+                <img src="images/eraser.png" />
+            </div>
+        </div>
+
+        <div class="group pen" id="pen-size">
+            <div class="item active" data-linewidth="1" title="1 Pixel">
+                <div class="stroke" style="width:1px;height: 1px; position: relative"></div>
+            </div>
+            <div class="item" data-linewidth="2" title="2 Pixels">
+                <div class="stroke" style="width:2px;height: 2px; position: relative"></div>
+            </div>
+            <div class="item" data-linewidth="3" title="3 Pixels">
+                <div class="stroke" style="width:3px;height: 3px; position: relative"></div>
+            </div>
+            <div class="item" data-linewidth="4" title="4 Pixels">
+                <div class="stroke" style="width:4px;height: 4px; position: relative"></div>
+            </div>
+            <div class="item" data-linewidth="5" title="5 Pixels">
+                <div class="stroke" style="width:5px;height: 5px; position: relative"></div>
+            </div>
+        </div>
+
+        <div class="group highlighter" id="highlighter-size">
+            <div class="item active" data-brushsize="5" title="5 Pixels">
+                <div class="stroke" style="width:5px;height: 5px; position: relative"></div>
+            </div>
+            <div class="item" data-brushsize="8" title="8 Pixels">
+                <div class="stroke" style="width:8px;height: 8px; position: relative"></div>
+            </div>
+            <div class="item" data-brushsize="12" title="12 Pixels">
+                <div class="stroke" style="width:12px;height: 12px; position: relative"></div>
+            </div>
+            <div class="item" data-brushsize="16" title="16 Pixels">
+                <div class="stroke" style="width:16px;height: 16px; position: relative"></div>
+            </div>
+            <div class="item" data-brushsize="20" title="20 Pixels">
+                <div class="stroke" style="width:20px;height: 20px; position: relative"></div>
+            </div>
+        </div>
+    </div>
+
+    <canvas></canvas>
+
+    <div class="controls right">
+        <div class="group colors">
+            <div class="item active" data-color="#000000">
+                <div class="color" style="background-color:#000000"></div>
+            </div>
+            <div class="item" data-color="#ff0000">
+                <div class="color" style="background-color:#ff0000"></div>
+            </div>
+            <div class="item" data-color="#00ff00">
+                <div class="color" style="background-color:#00ff00"></div>
+            </div>
+            <div class="item" data-color="#0000ff">
+                <div class="color" style="background-color:#0000ff"></div>
+            </div>
+            <div class="item" data-color="#00ffff">
+                <div class="color" style="background-color:#00ffff"></div>
+            </div>
+            <div class="item" data-color="#ffff00">
+                <div class="color" style="background-color:#ffff00"></div>
+            </div>
+            <div class="item" data-color="#c46f0f">
+                <div class="color" style="background-color:#c46f0f"></div>
+            </div>
+            <div class="item" data-color="#0099ff">
+                <div class="color" style="background-color:#0099ff"></div>
+            </div>
+            <div class="item" data-color="#ff009d">
+                <div class="color" style="background-color:#ff009d"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
